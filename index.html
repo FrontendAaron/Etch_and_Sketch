@@ -8,26 +8,82 @@
 </head>
 <body>
 
-    <div id="div"></div>
+    <section id="sectionOne">
+    </section>
+    <section id="sectionTwo"></section>
+    <section id="sectionThree"></section>
+    <section id="sectionFour"></section>
+
+    <script>
+
+    const sectionOne = document.getElementById('sectionOne');
+    const sectionTwo = document.getElementById('sectionTwo')
+    const sectionThree = document.getElementById('sectionThree');
+    const sectionFour = document.getElementById('sectionFour')
    
-   <script>
+    function makeSquare (howMany) { 
+
+    for (let i = 0; i < howMany; i++ ) { 
     
-    let div = document.getElementById('div');
+        let square = document.createElement("div")
 
-for (i = 0; i < 16; i++)
-{     
-    let square = document.createElement("div")
 
-    div.appendChild(square)
+    sectionOne.appendChild(square);  
 
-   square.style.display = 'flex'
+    square.style.display = 'flex'
+    square.id = `div${i+4}`
     square.style.width = "100px";
     square.style.height = "100px";
     square.style.backgroundColor = 'black'
     square.style.flexDirection = "row"
     square.style.margin = "10px"
-}
-   for (i = 0; i <)
+
+    }
+
+    for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div") 
+        sectionTwo.appendChild(square);  
+
+    square.style.display = 'flex'
+    square.id = `div${i+8}`
+    square.style.width = "100px";
+    square.style.height = "100px";
+    square.style.backgroundColor = 'black'
+    square.style.flexDirection = "row"
+    square.style.margin = "10px"
+
+    }
+    for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div") 
+
+        sectionThree.appendChild(square);  
+    square.style.display = 'flex'
+    square.id = `div${i+12}`
+    square.style.width = "100px";
+    square.style.height = "100px";
+    square.style.backgroundColor = 'black'
+    square.style.flexDirection = "row"
+    square.style.margin = "10px"
+
+    }
+
+    for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div") 
+
+        sectionFour.appendChild(square);  
+    square.style.display = 'flex'
+    square.id = `div${i+16}`
+    square.style.width = "100px";
+    square.style.height = "100px";
+    square.style.backgroundColor ='black'
+    square.style.flexDirection = "row"
+    square.style.margin = "10px"
+    
+   }
+
+} 
+
+makeSquare(4);
     </script>
 </body>
 </html>
