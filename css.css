@@ -1,46 +1,28 @@
 
-body { 
+#header {
+    size: 10px;
+display: flex;
+justify-content: center;  
+} 
+
+#mainSection { 
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
     justify-content: center;
     flex-wrap: wrap;
 align-items: center;
 height: 100vh;
+
 }
 
-/* #mainSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: flex-start;
-} */
-
-/* #sectionOne 
-{
-
-
+#footer {
+display: flex;
+justify-content: center;
+size: 10px;
 } 
 
-#sectionTwo 
-{
 
-
-}
-
-#sectionThree {
-
-
-}
-
-#sectionFour 
-{
-
-
-}  */
-
-#div5 {
+/* #div5 {
 flex-wrap: wrap;
 justify-content: flex-start;
-}
+} */

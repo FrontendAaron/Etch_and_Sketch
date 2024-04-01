@@ -8,82 +8,366 @@
 </head>
 <body>
 
-    <section id="sectionOne">
-    </section>
+    <div id="header">
+    <p>Etch and Sketch</p>
+    </div>
+
+<section id="mainSection">
+    <section id="sectionOne"></section>
     <section id="sectionTwo"></section>
     <section id="sectionThree"></section>
     <section id="sectionFour"></section>
+    <section id="sectionFive"></section>
+    <section id="sectionSix"></section>
+    <section id="sectionSeven"></section>
+    <section id="sectionEight"></section>
+    <section id="sectionNine"></section>
+    <section id="sectionTen"></section>
+    <section id="sectionEleven"></section>
+    <section id="sectionTwelve"></section>
+    <section id="sectionThirteen"></section>
+    <section id="sectionFourteen"></section>
+    <section id="sectionFifteen"></section>
+    <section id="sectionSixteen"></section>
+</section>
 
-    <script>
+<div id="footer">
+    <button id="newSquares"></button>
+<button id="Reset">RESET</button>
+</div>
+   
+   <script>
 
     const sectionOne = document.getElementById('sectionOne');
-    const sectionTwo = document.getElementById('sectionTwo')
+    const sectionTwo = document.getElementById('sectionTwo');
     const sectionThree = document.getElementById('sectionThree');
-    const sectionFour = document.getElementById('sectionFour')
+    const sectionFour = document.getElementById('sectionFour');
+    const sectionFive = document.getElementById('sectionFive');
+    const sectionSix = document.getElementById('sectionSix');
+    const sectionSeven = document.getElementById('sectionSeven');
+    const sectionEight = document.getElementById('sectionEight');
+    const sectionNine = document.getElementById('sectionNine');
+    const sectionTen = document.getElementById('sectionTen');
+    const sectionEleven = document.getElementById('sectionEleven');
+    const sectionTwelve = document.getElementById('sectionTwelve');
+    const sectionThirteen = document.getElementById('sectionThirteen');
+    const sectionFourteen = document.getElementById('sectionFourteen');
+    const sectionFifteen = document.getElementById('sectionFifteen');
+    const sectionSixteen = document.getElementById('sectionSixteen');
+
+    let howMany22 = document.getElementById('newSquares')
+
    
     function makeSquare (howMany) { 
 
     for (let i = 0; i < howMany; i++ ) { 
     
-        let square = document.createElement("div")
-
+    let square = document.createElement("div");
 
     sectionOne.appendChild(square);  
 
-    square.style.display = 'flex'
-    square.id = `div${i+4}`
-    square.style.width = "100px";
-    square.style.height = "100px";
-    square.style.backgroundColor = 'black'
-    square.style.flexDirection = "row"
-    square.style.margin = "10px"
+    square.style.display = 'flex';
+    square.id = `div0${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor = 'gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+    square.addEventListener('mouseover',() => {
+
+    square.style.backgroundColor = 'white'
+    })
 
     }
 
     for (let i = 0; i < howMany; i++ ) { 
-        let square = document.createElement("div") 
+        let square = document.createElement("div"); 
         sectionTwo.appendChild(square);  
 
-    square.style.display = 'flex'
-    square.id = `div${i+8}`
-    square.style.width = "100px";
-    square.style.height = "100px";
-    square.style.backgroundColor = 'black'
-    square.style.flexDirection = "row"
-    square.style.margin = "10px"
+    square.style.display = 'flex';
+    square.id = `div1${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor = 'gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
 
     }
     for (let i = 0; i < howMany; i++ ) { 
-        let square = document.createElement("div") 
+        let square = document.createElement("div"); 
 
         sectionThree.appendChild(square);  
-    square.style.display = 'flex'
-    square.id = `div${i+12}`
-    square.style.width = "100px";
-    square.style.height = "100px";
-    square.style.backgroundColor = 'black'
-    square.style.flexDirection = "row"
-    square.style.margin = "10px"
+    square.style.display = 'flex';
+    square.id = `div2${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor = 'gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
 
     }
 
     for (let i = 0; i < howMany; i++ ) { 
-        let square = document.createElement("div") 
+        let square = document.createElement("div"); 
 
         sectionFour.appendChild(square);  
-    square.style.display = 'flex'
-    square.id = `div${i+16}`
-    square.style.width = "100px";
-    square.style.height = "100px";
-    square.style.backgroundColor ='black'
-    square.style.flexDirection = "row"
-    square.style.margin = "10px"
+    square.style.display = 'flex';
+    square.id = `div3${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+   }
+
+   for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionFive.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div4${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+    
+    square.addEventListener('mouseover',() => {
+
+    square.style.backgroundColor = 'white'
+})
+   }
+
+   for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionSix.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div5${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+    
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+   }
+
+   for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionSeven.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div6${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+    
+   }
+   
+   for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionEight.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div7${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
     
    }
 
+   for (let i = 0; i < howMany; i++ ) { 
+    
+        let square = document.createElement("div");
+
+
+    sectionNine.appendChild(square);  
+
+    square.style.display = 'flex';
+    square.id = `div8${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor = 'gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+
+    }
+
+    for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+        sectionTen.appendChild(square);  
+
+    square.style.display = 'flex';
+    square.id = `div9${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor = 'gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+
+    }
+    for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionEleven.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div10${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor = 'gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+
+    }
+
+    for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionTwelve.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div11${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+   }
+
+   for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionThirteen.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div12${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+    
+   }
+
+   for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionFourteen.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div13${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+    
+   }
+
+   for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionFifteen.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div14${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+    
+   }
+   
+   for (let i = 0; i < howMany; i++ ) { 
+        let square = document.createElement("div"); 
+
+        sectionSixteen.appendChild(square);  
+    square.style.display = 'flex';
+    square.id = `div15${i}`;
+    square.style.width = "20px";
+    square.style.height = "20px";
+    square.style.backgroundColor ='gray';
+    square.style.flexDirection = "row";
+    square.style.margin = "1px";
+
+    square.addEventListener('mouseover',() => {
+
+square.style.backgroundColor = 'white'
+})
+    
+   }
+   
+
 } 
 
-makeSquare(4);
+makeSquare(20);
     </script>
+//create a var to hold input
+// if the user inputs a new number, append new sections 
+or remove current sections and create a variable as an arg 
 </body>
 </html>
